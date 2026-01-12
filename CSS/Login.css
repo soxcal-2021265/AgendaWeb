@@ -1,39 +1,43 @@
-/* Estilos generales */
 body {
+    background-image: url('../IMG/fondo.jpg');
+    background-size: cover;       /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-attachment: fixed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8e695;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
-
+    
 .login-container {
-    background-color: rgb(85, 169, 248);
+    background-color: rgba(228, 146, 25, 0.925);
     padding: 2.5rem;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     width: 320px;
 }
-
+ 
 h2 {
     text-align: center;
     color: #ffffff;
     margin-top: 0;
 }
-
+ 
 .form-group {
     margin-bottom: 1.2rem;
 }
-
+ 
 label {
     display: block;
     margin-bottom: 8px;
     color: #ffffff;
     font-size: 14px;
 }
-
+ 
 input[type="text"],
 input[type="password"] {
     width: 100%;
@@ -43,25 +47,25 @@ input[type="password"] {
     box-sizing: border-box;
     outline: none;
 }
-
+ 
 input:focus {
-    border-color: #007bff;
+    border-color: #f7f6f1;
 }
-
-/* Botón de acción */
-button {
+ 
+button,
+.boton-login {
+    display: block;
     width: 100%;
     padding: 12px;
-    background-color: #1c89ff;
+    background-color: #915700;
     border: none;
     border-radius: 6px;
-    color: white;
+    color: rgb(253, 252, 248);
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-top: 10px;
 }
