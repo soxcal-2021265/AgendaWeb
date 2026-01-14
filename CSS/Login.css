@@ -1,9 +1,4 @@
 body {
-    background-image: url('../IMG/fondo.jpg');
-    background-size: cover;       /* Ajusta la imagen para cubrir toda la pantalla */
-    background-position: center;  /* Centra la imagen */
-    background-repeat: no-repeat; /* No repite la imagen */
-    background-attachment: fixed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #ffffff;
     display: flex;

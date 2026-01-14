@@ -7,49 +7,58 @@
     <link rel="stylesheet" href="../CSS/Contactos.css">
 </head>
 <body>
- 
-    <div class="main-container">
-        <header class="header-contactos">
-            <h2>Mis Contactos</h2>
-            <a href="Login.html" class="btn-volver">Cerrar Sesión</a>
-        </header>
- 
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombres</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Juan Alejandro</td>
-                        <td><button class="btn-edit">Información</button></td>
-                    </tr>
-                    <tr>
-                        <td>María Alejandra</td>
-                        <td><button class="btn-edit">Información</button></td>
-                    </tr>
-                    <tr>
-                        <td>Sebastian Andre</td>
-                        <td><button class="btn-edit">Información</button></td>
-                    </tr>
-                    <tr>
-                        <td>Sofia Valentina</td>
-                        <td><button class="btn-edit">Información</button></td>
-                    </tr>
-                    <tr>
-                        <td>Anderson Mences</td>
-                        <td><button class="btn-edit">Información</button></td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="footer-acciones">
-            <button class="btn-agregar">＋ Agregar Contacto</button>
-        </div>
-        </div>
+
+    <div class="layout-wrapper">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Dashboard</h3>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="Contactos.html" class="btn-nav">Contactos</a>
+                <a href="Contactos.html" class="btn-nav">Contactos</a>
+                <a href="Contactos.html" class="btn-nav">Contactos</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Usuario: Admin</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-container">
+                <header class="header-contactos">
+                    <h2>Mis Contactos</h2>
+                    <a href="Login.html" class="btn-volver">Cerrar Sesión</a>
+                </header>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombres</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Juan Alejandro</td>
+                                <td><button class="btn-edit">Información</button></td>
+                            </tr>
+                            <tr>
+                                <td>María Alejandra</td>
+                                <td><button class="btn-edit">Información</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="footer-acciones">
+                        <a href="NuevoContacto.html" class="btn-agregar">＋ Agregar Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
     </div>
- 
 </body>
 </html>

@@ -1,93 +1,103 @@
 body {
-    background-image: url('../IMG/fondo.jpg');
-    background-size: cover;       /* Ajusta la imagen para cubrir toda la pantalla */
-    background-position: center;  /* Centra la imagen */
-    background-repeat: no-repeat; /* No repite la imagen */
-    background-attachment: fixed;
     margin: 0;
-    color: #ffffff;
     padding: 0;
     font-family: Arial, sans-serif;
+    min-height: 100vh;
+    /* Si tienes una imagen de fondo, asegúrate de ponerla aquí */
+}
+
+.layout-wrapper {
     display: flex;
-    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    position: relative; /* Contexto para el centrado */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #d47f00;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
+    
+    /* Esquinas curvas */
+    border-radius: 20px;
+    
+    /* Posicionamiento fijo para que no empuje la tabla */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    z-index: 100;
+}
+
+.sidebar-header h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+.btn-nav {
+    text-decoration: none; /* Importante porque ahora usas etiquetas <a> */
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+    background: white;
+    color: #d47f00;
+}
+
+.sidebar-footer {
+    padding-top: 20px;
+    border-top: 1px solid #ffffff55;
+    font-size: 0.9rem;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente respecto a layout-wrapper (toda la pantalla) */
+    align-items: center;     /* Centra verticalmente */
+    padding: 20px;
+    width: 100%;
 }
 
 .main-container {
     background-color: #e49219ec;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
-    width: 500%;
-    max-width: 400px;
-    margin: 20px;
-}
- 
-.header-contactos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
- 
-table {
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
- 
-th, td {
-    text-align: left;
-    padding: 12px;
-    border-bottom: 1px solid #ffffffec;
-}
- 
-th {
-    background-color: #d47f00;
-    color: #ffffff;
-}
- 
-.btn-edit {
-    background-color: #ce8210;
-    color: #ffffff;
-    padding: 5px 10px;
-    font-size: 12px;
-    width: auto;
-    cursor: pointer;
-    border: 3px solid #fcf9f9;
-}
- 
-.btn-volver {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 14px;
-    border: 3px solid #fcf9f9;
-    padding: 5px 10px;
-    border-radius: 4px;
-}
- 
-.btn-volver:hover {
-    background-color: #eee;
+    max-width: 450px;
+    /* Al estar el sidebar como 'fixed', este contenedor se centrará en toda la pantalla */
 }
 
-.footer-acciones {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
+/* --- Resto de tus estilos (Tabla, h2, botones) --- */
 
-.btn-agregar {
-    background-color: #d47f00;
-    color: rgb(238, 238, 238);
-    border: none;
-    padding: 12px 25px;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.h2{
-    color: white;
-}
+h2 { color: white; margin: 0; }
+.header-contactos { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { text-align: left; padding: 12px; border-bottom: 1px solid #ffffffec; color: white; }
+th { background-color: #d47f00; color: #ffffff; }
+.btn-edit { background-color: #e49219ec; color: #ffffff; padding: 5px 10px; font-size: 12px; cursor: pointer; border: 3px solid #fcf9f9; }
+.btn-volver { text-decoration: none; color: #ffffff; font-size: 14px; border: 3px solid #fcf9f9; padding: 5px 10px; border-radius: 4px; }
+.footer-acciones { margin-top: 20px; display: flex; justify-content: center; }
+.btn-agregar { background-color: #d47f00; color: white; text-decoration: none; padding: 12px 25px; border-radius: 6px; font-weight: bold; }
