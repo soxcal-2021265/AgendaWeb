@@ -3,14 +3,13 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     min-height: 100vh;
-    /* Si tienes una imagen de fondo, asegúrate de ponerla aquí */
 }
 
 .layout-wrapper {
     display: flex;
     min-height: 100vh;
     width: 100%;
-    position: relative; /* Contexto para el centrado */
+    position: relative;
 }
 
 .sidebar {
@@ -21,11 +20,7 @@ body {
     flex-direction: column;
     padding: 20px;
     box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
-    
-    /* Esquinas curvas */
     border-radius: 20px;
-    
-    /* Posicionamiento fijo para que no empuje la tabla */
     position: fixed;
     top: 20px;
     left: 20px;
@@ -74,8 +69,8 @@ body {
 .main-content {
     flex-grow: 1;
     display: flex;
-    justify-content: center; /* Centra horizontalmente respecto a layout-wrapper (toda la pantalla) */
-    align-items: center;     /* Centra verticalmente */
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     width: 100%;
 }
@@ -87,10 +82,8 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 450px;
-    /* Al estar el sidebar como 'fixed', este contenedor se centrará en toda la pantalla */
 }
 
-/* --- Resto de tus estilos (Tabla, h2, botones) --- */
 
 h2 { color: white; margin: 0; }
 .header-contactos { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
