@@ -59,12 +59,10 @@ body {
     color: #d47f00;
 }
 
-.sidebar-footer p {
-    color: white;
-    border-top: 1px solid #ffffff55;
+.sidebar-footer {
     padding-top: 20px;
+    border-top: 1px solid #ffffff55;
     font-size: 0.9rem;
-    margin-top: auto
 }
 
 .main-content {

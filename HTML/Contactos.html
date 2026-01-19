@@ -22,7 +22,8 @@
             </nav>
 
             <div class="sidebar-footer">
-                <p>Usuario: Admin</p>
+                <p>Usuario: <span id="nombre-usuario">Admin</span></p>
+                <p>Contraseña: <span id="pass-usuario"></span></p>
             </div>
         </aside>
 
@@ -30,8 +31,10 @@
             <div class="main-container">
                 <header class="header-contactos">
                     <h2>Mis Contactos</h2>
-                    <a href="Login.html" class="btn-volver">Cerrar Sesión</a>
+                    <a href="#" onclick="logout()" class="btn-volver">Cerrar Sesión</a>
                 </header>
+
+                <script src="../JS/agenda.js"></script>
 
                 <div class="table-container">
                     <table>
