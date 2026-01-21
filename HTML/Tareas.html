@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Contactos Favoritos</title>
-    <link rel="stylesheet" href="../CSS/Contactos.css">
+    <title>ToDo List - Tareas</title>
+    <link rel="stylesheet" href="../CSS/Tareas.css">
 </head>
+
 <body>
 
     <div class="layout-wrapper">
-        
+
         <aside class="sidebar">
             <div class="sidebar-header">
                 <h3>Dashboard</h3>
             </div>
-            
+
             <nav class="sidebar-nav">
                 <a href="Contactos.html" class="btn-nav">Contactos</a>
                 <a href="Favoritos.html" class="btn-nav">Favoritos</a>
@@ -28,28 +30,32 @@
         </aside>
 
         <main class="main-content">
-            <div class="main-container">
-                <header class="header-contactos">
-                    <h2>Mis Favoritos</h2>
+            <div class="container-todo">
+                <header class="header-todo">
+                    <h2>Lista de Pendientes</h2>
+                    <p>Organiza tus tareas por prioridad</p>
                 </header>
 
+                <div class="todo-input-section">
+                    <input type="text" id="taskInput" placeholder="¿Qué tarea deseas agregar?">
+                    <select id="priorityInput">
+                        <option value="1">Prioridad Alta</option>
+                        <option value="2">Prioridad Media</option>
+                        <option value="3">Prioridad Baja</option>
+                    </select>
+                    <button onclick="addTask()" id="btn-main" class="btn-add">Añadir</button>
+                </div>
+
                 <div class="table-container">
-                    <table>
+                    <table id="todoTable">
                         <thead>
                             <tr>
-                                <th>Nombres</th>
+                                <th>Tarea</th>
+                                <th>Prioridad</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Sebastian Florian</td>
-                                <td><a href="FavoritoSF.html" class="btn-edit">Detalles</a></td>
-                            </tr>
-                            <tr>
-                                <td>Mences Mendez</td>
-                                <td><a href="FavoritoMM.html" class="btn-edit">Detalles</a></td>
-                            </tr>
+                        <tbody id="taskList">
                         </tbody>
                     </table>
                 </div>
@@ -57,6 +63,8 @@
         </main>
 
     </div>
+
     <script src="../JS/agenda.js"></script>
 </body>
+
 </html>
